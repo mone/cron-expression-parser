@@ -23,3 +23,7 @@ trait CommonModuleDefinition extends ScalaModule {
 }
 
 object core extends CommonModuleDefinition
+
+object cli extends CommonModuleDefinition {
+  override def moduleDeps = Seq(core)
+}
