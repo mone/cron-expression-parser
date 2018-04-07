@@ -21,3 +21,5 @@ trait CommonModuleDefinition extends ScalaModule {
     def testFrameworks = Seq("org.scalatest.tools.Framework")
   }
 }
+
+object core extends CommonModuleDefinition
